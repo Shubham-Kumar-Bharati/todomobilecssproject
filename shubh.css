@@ -1,0 +1,207 @@
+
+.tasks-list{
+    max-width: 100vw;
+    min-height: 70px;
+    background-color: #FFFFFF;
+}
+
+.tasks{
+    position: absolute;
+    left: 315px;
+}
+
+.list{
+    color: #00A5EC;
+}
+
+
+.bgcolor-grey{
+    border: 1px solid #C2C2C2;
+    background-color:#EDEDED;
+    max-width: 100vw;
+    min-height: 100vh;
+}
+
+.addnewtask{
+    /* border: 1px solid green; */
+    display: flex;
+    align-items: center;
+    max-width: 160px;
+    position: absolute;
+    top: 100px;
+    right: 300px;
+}
+
+#circleplus{
+    color: #00A5EC;
+    font-size: 35px;
+}
+
+.newtask{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: large;
+}
+
+.grid-container{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    row-gap: 10px;
+    column-gap: 2px;
+    padding-left: 310px;
+    padding-right: 310px;
+    padding-top: 80px;
+}
+
+.grid-item{
+
+    background-color: #FFFFFF;
+    width: 210px;
+    height: 230px;
+    border-radius: 5px;
+    
+}
+.grid-item a{
+    text-decoration: none;
+}
+.grid-item:hover{
+
+    background-color: #FFFFFF;
+    width: 210px;
+    height: 230px;
+    border-radius: 5px;
+    
+}
+
+.heading{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* font-size: large; */
+    color: #00A5EC;
+    padding-top: 20px;
+    padding-left: 20px;
+    
+}
+
+
+.square-check{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-top: 15px;
+}
+
+#squarecheck{
+    color: #C2C2C2;
+    font-size: 30px;
+}
+
+.visit-church{
+    color: rgb(201, 201, 201);
+    text-decoration: line-through;
+}
+
+.inputcheckbox{
+    width: 27px;
+    height: 27px;
+}
+
+.checkbox{
+    display: flex;
+    align-items: center;
+    padding-left: 17px;
+    padding-top: 10px;
+}
+
+@maedia (min-width:1260px){
+    .grid-container{
+        grid-template-columns:auto auto auto;
+    }
+}
+
+@media (min-width:750px) and (max-width:1260px){
+    .grid-container{
+        grid-template-columns: auto auto;
+        column-gap: 50px;
+        padding-left: 180px;
+    }
+    .tasks{
+        position: absolute;
+        left: 200px;
+    }
+}
+
+@media (min-width:620px) and (max-width:750px){
+    .grid-container{
+        grid-template-columns: auto auto;
+        padding-left: 150px;
+        gap:20px;
+    }
+}
+
+@media (min-width:520px) and (max-width:620px){
+    .grid-container{
+        grid-template-columns: auto auto;
+        padding-left: 50px;
+        gap:20px;
+    }
+    .tasks{
+        position: absolute;
+        left: 200px;
+    }
+}
+@media (min-width:450px) and (max-width:520px){
+    .grid-container{
+        grid-template-columns: auto auto;
+        padding-left: 5px;
+        gap:5px;
+    }
+    .tasks{
+        position: absolute;
+        left: 150px;
+    }
+    .newtask{
+    
+        display: none;
+    }
+    .addnewtask i{
+        position: relative;
+        left: 90px;
+    }
+}
+
+@media (min-width:370px) and (max-width:450px){
+    .grid-container{
+        grid-template-columns: auto;
+        padding-left: 80px; 
+    }
+    .tasks{
+        position: absolute;
+        left: 30px;
+    }
+    .newtask{
+        display: none;
+    }
+    .addnewtask i{
+        position: relative;
+        left: 130px;
+    }
+}
+
+@media (min-width:50px) and (max-width:370px){
+    .grid-container{
+        grid-template-columns: auto;
+        padding-left: 10px; 
+    }
+    .tasks{
+        position: absolute;
+        left: 30px;
+    }
+    .newtask{
+        display: none;
+    }
+    .addnewtask i{
+        position: relative;
+        left: 200px;
+    }
+}
+
